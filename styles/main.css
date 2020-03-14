@@ -25,7 +25,9 @@ body {
     font-family: Inter, "Open Sans", sans-serif;
     font-size: 9pt;
     justify-content: center;
-    margin: 12px;
+    height: 100vh;
+    margin: 0;
+    padding: 12px;
     text-align: center;
 }
 
@@ -33,7 +35,6 @@ body {
     align-content: space-between;
     display: grid;
     grid-row-gap: 24px;
-    height: 100vh;
     max-width: 50ch;
 }
 
