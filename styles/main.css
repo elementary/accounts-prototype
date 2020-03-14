@@ -2,6 +2,7 @@
     --background-color: white;
     --color: #333;
     --accent-color: #3689e6;
+    --padding: 12px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -27,7 +28,7 @@ body {
     justify-content: center;
     height: 100vh;
     margin: 0;
-    padding: 12px;
+    padding: var(--padding);
     text-align: center;
 }
 
