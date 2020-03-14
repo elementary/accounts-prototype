@@ -1,7 +1,21 @@
+:root {
+    --background-color: white;
+    --color: #333;
+    --accent-color: #3689e6;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: #1a1a1a;
+        --color: #fafafa;
+        --accent-color: #8cd5ff;
+    }
+}
+
 body {
-    background-color: #f5f5f5;
-    color: #333;
-    font-family: Inter;
+    background-color: var(--background-color);
+    color: var(--color);
+    font-family: Inter, "Open Sans", sans-serif;
 }
 
 ::selection {
@@ -11,8 +25,8 @@ body {
 }
 
 a {
-    color: #08c;
-    fill: #08c;
+    color: var(--accent-color);
+    fill: var(--accent-color);
     text-decoration: none;
 }
 
