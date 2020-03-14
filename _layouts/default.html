@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>{{ site.title }}</title>
+    {% assign hash = site.time | date: '%s' %}
+    <link rel="stylesheet" type="text/css" media="all" href="{{ '/styles/main.css' | prepend: site.baseurl | append: '?v=' | append: hash }}">
+  </head>
+  <body class="{% if page.url == '/' %}home {% endif %}{{ page.url | replace: '.html', '' | slugify }}">
+    <section class="main">
+      {{ content }}
+    </section>
+  </body>
+</html>
