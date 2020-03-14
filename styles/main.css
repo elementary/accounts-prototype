@@ -30,8 +30,10 @@ body {
 }
 
 .main {
+    align-content: space-between;
     display: grid;
     grid-row-gap: 24px;
+    height: 100vh;
     max-width: 50ch;
 }
 
